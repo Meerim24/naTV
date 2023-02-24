@@ -14,6 +14,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class Price {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     boolean active;
     Date startDate;

@@ -13,6 +13,7 @@ import javax.persistence.*;
 @RequiredArgsConstructor
 public class OrderDetail {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     double price;
     @ManyToOne

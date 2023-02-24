@@ -13,6 +13,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class Days {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     @Column(name = "date_days")
     Date days;
